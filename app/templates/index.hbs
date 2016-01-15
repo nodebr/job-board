@@ -1,0 +1,20 @@
+<div class="uk-grid">
+  <div class="uk-width-medium-3-4">
+    <div>
+      <p>Últimas vagas listadas:</p>
+    </div>
+
+    <div class="job">
+    {{#each model as |job|}}
+      <div>{{job.title}}</div>
+      <div>{{job.description}}</div>
+    {{/each}}
+    </div>
+  </div>
+
+  <div class="uk-width-medium-1-4">
+    <div>
+      <p>Job Board by nodebr</p>
+    </div>
+  </div>
+</div>

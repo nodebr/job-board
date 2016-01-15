@@ -1,0 +1,17 @@
+
+<h2>Postar vaga</h2>
+<div class="uk-form">
+  <div class="uk-form-row">
+    {{input value=title placeholder="Title"}}
+  </div>
+  <div class="uk-form-row">
+    {{textarea value=description placeholder="Description"}}
+  </div>
+  <div class="uk-form-row">
+    {{textarea value=location placeholder="Location"}}
+  </div>
+  <div class="uk-form-row">
+    {{textarea value=applyURL placeholder="Apply URL"}}
+  </div>
+</div>
+<button {{action "publishJob"}} class="uk-button">Enviar</button>
