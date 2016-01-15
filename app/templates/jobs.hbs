@@ -1,0 +1,29 @@
+<!-- app/templates/posts.hbs -->
+
+<h2>New Post</h2>
+<ul class="post-publish">
+  <li>
+    {{input value=title placeholder="Title"}}
+  </li>
+  <li>
+    {{textarea value=description placeholder="Description"}}
+  </li>
+  <li>
+    {{textarea value=location placeholder="Location"}}
+  </li>
+  <li>
+    {{textarea value=applyURL placeholder="Apply URL"}}
+  </li>
+  <li>
+    <button {{action "publishJob"}}>Publish</button>
+  </li>
+</ul>
+
+<!-- app/templates/posts.hbs -->
+
+<section>
+{{#each model as |job|}}
+  <div>{{job.title}}</div>
+  <div>{{job.description}}</div>
+{{/each}}
+</section>
