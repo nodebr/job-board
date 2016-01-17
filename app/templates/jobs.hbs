@@ -2,7 +2,7 @@
 
 <section>
 {{#each model as |job|}}
-  <div>{{job.title}}</div>
+  <div>{{#link-to "view" job}}{{job.title}}{{/link-to}}</div>
   <div>{{job.description}}</div>
 {{/each}}
 </section>
